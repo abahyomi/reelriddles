@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(/fonts/Poppins-Regular.woff);
+}
+
+@font-face {
+    font-family: "Light";
+    src: url(/fonts/Poppins-Light.woff);
+}
+
+@font-face {
+    font-family: "Bold";
+    src: url(/fonts/Poppins-Bold.woff);
+}
+
+h1{
+    font-size: 2rem;
+    color: $primary;
+    margin: 1rem 0rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+h3{
+    font-size: 1.2rem;
+    color: $primary;
+    margin:0.5rem;
+    margin-left: 0;
+    letter-spacing: 80%;
+}

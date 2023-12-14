@@ -1,0 +1,25 @@
+@import 'partials/vars';
+@import 'partials/fontface';
+@import 'partials/header';
+@import 'partials/nav';
+@import 'partials/main';
+@import 'partials/galeria';
+@import 'partials/footer';
+
+* {
+    font-family:"Poppins";
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 16px;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: $background;
+}
+
+.header {
+    border-bottom: 1px solid $primary;
+}
+
