@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Poppins";
-  src: url(/fonts/Poppins-Regular.woff);
+  src: url(../../../fonts/Poppins-Regular.woff);
 }
 @font-face {
   font-family: "Light";
-  src: url(/fonts/Poppins-Light.woff);
+  src: url(../../../fonts/Poppins-Regular.woff);
 }
 @font-face {
   font-family: "Bold";
-  src: url(/fonts/Poppins-Bold.woff);
+  src: url(../../../fonts/Poppins-Regular.woff);
 }
 h1 {
   font-size: 2rem;
@@ -224,21 +224,6 @@ h3 {
   cursor: pointer;
 }
 
-@keyframes escalar {
-  0% {
-    transform: scale(1);
-    fill: black;
-  }
-  50% {
-    transform: scale(1.05);
-    fill: tomato;
-    rotate: 5deg;
-  }
-  100% {
-    transform: scale(1);
-    fill: black;
-  }
-}
 .CartTab {
   width: 400px;
   background-color: rgba(235, 235, 235, 0.9);
