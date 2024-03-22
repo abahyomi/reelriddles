@@ -38,7 +38,7 @@ h3 {
   gap: 2rem;
   width: 100vw;
   height: 100vh;
-  background-image: url("../../../assets/img/BG.png");
+  background-image: url("/assets/img/BG.png");
   background-size: cover;
   background-position: center;
   position: relative;

@@ -19,51 +19,44 @@
     <div class="container">
         <!-- <video id="intro-video" autoplay controls>
             <source src="assets/img/POPS_WalkCycle_Abahyomi_ºGB.mp4" type="video/mp4">
-        </video>  Falta implementar bien su flujo y el responsive -->
+        </video>  Falta implementar bien su flujo y el responsive, y tamaño -->
         <div id="home" class="start">
             <h2>¡Press play or tap to start!</h2>
             <div class="wrapper">
-                <!--Enseñar modal--><span class="modal_show">Play</span>
+                <!--Modal de instrucciones--><span class="modal_show">Play</span>
                 <a href="pages/highscores.html">Highscores</a>
             </div>
         </div>
 
 
-        <div id="modal" class="modal">
+        <article id="modal" class="modal">
             <div class="modal-content">
-
-                <div class="head_modal"> 
+                <div class="head_modal">
                     <h2>Instructions!</h2>
                     <span class="close">&times;</span>
                 </div>
-
                 <div class="modal_text">
                     <p>How to Play:<br>
                         - Answer Wisely: Read each question carefully and select your answer before time runs out. With
                         hundreds of questions spanning various genres and decades, every round is a new adventure.<br>
                         -Earn Points: Correct answers earn you 100 points each. Rack up your score and climb the
                         leaderboard to prove your cinema expertise to the world.</p>
-
                     <p>Features:<br>
                         - Spoiler Alert: Brace yourself for spoilers! Dive into questions that delve deep into the heart
                         of popular films.<br>
                         - Countdown Timer: Feel the pressure as each question comes with a ticking timer. Think fast and
                         trust
                         your instincts to secure the highest score possible.</p>
+                    <a href="pages/game.html">Start Game</a>
                 </div>
-
-                <!-- Add start game button -->
-                <a href="pages/game.html">Start Game</a>
             </div>
+        </article>
+
+        <!--Texturas-->
+        <div class="texture-overlay"></div>
+        <div class="film-grain">
+            <img src="./assets/img/film.webp" alt="Film Grain" class="film-grain-img">
         </div>
-
-    </div>
-
-
-    <div class="texture-overlay"></div>
-    <div class="film-grain">
-        <img src="./assets/img/film.webp" alt="Film Grain" class="film-grain-img">
-    </div>
 </body>
 
 </html>
