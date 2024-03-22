@@ -40,7 +40,7 @@ h3 {
   height: 100vh;
   background-image: url("/assets/img/BG.png");
   background-size: cover;
-  background-position: center;
+  background-position: left;
   position: relative;
 }
 .container .modal {
@@ -179,6 +179,45 @@ h3 {
 }
 .container .start .wrapper a:active {
   transform: scale(98%);
+}
+@media (max-width: 600px) {
+  .container {
+    background-image: url("/assets/img/BG_mobile.png");
+    font-size: 1rem;
+  }
+  .container .start {
+    padding: 2rem;
+    align-items: center;
+    top: 35%;
+    left: 2%;
+  }
+  .container .start h2 {
+    font-size: 1.25rem;
+  }
+  .container .modal-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0f0f0f;
+    margin: 5% auto;
+    padding: 4rem;
+    border: 2.5px solid #e5e5e5;
+    border-radius: 10px;
+    width: 95%;
+    max-width: 100%;
+    gap: 1rem;
+  }
+  .container .modal-content a {
+    width: 100%;
+  }
+  .container .modal-content .head_modal {
+    display: flex;
+    gap: 2rem;
+  }
+  .container .modal-content .modal_text {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
 
 .game_container {
