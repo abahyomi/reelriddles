@@ -312,6 +312,57 @@ h3 {
   font-size: 1.15rem;
   font-weight: 300;
 }
+@media (max-width: 600px) {
+  .game_container {
+    flex-direction: column;
+  }
+  .game_container .game {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  .game_container #progressText {
+    font-size: 1rem;
+  }
+  .game_container #progressBar {
+    display: none;
+  }
+  .game_container .question {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  .game_container .choices {
+    margin-top: 1rem;
+  }
+  .game_container .choices .choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    min-width: 10rem;
+    border-radius: 10px;
+    border: 2.5px solid #dddddd;
+    background: rgb(14, 14, 14);
+    gap: 0.5rem;
+    transition: 300ms;
+    align-items: center;
+  }
+  .game_container .choices .choice-container:hover {
+    cursor: pointer;
+    transform: scale(103%);
+  }
+  .game_container .choices .choice-container .choice-prefix {
+    padding: 2rem;
+  }
+  .game_container .choices .choice-container .choice-text {
+    padding: 1rem;
+    width: 100%;
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 300;
+  }
+  .game_container .choices .choice-container .choice-text p {
+    font-size: 0.75rem;
+  }
+}
 
 .correct {
   background: green;

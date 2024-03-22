@@ -107,6 +107,67 @@
             }
         }
     }
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+
+
+        .game {
+            padding: 1.5rem;
+            width: 100%;
+        }
+
+        #progressText {
+            font-size: 1rem;
+        }
+
+        #progressBar {
+            display: none;
+        }
+
+        .question {
+            font-size: 1rem;
+            max-width: 100%;
+        }
+
+        .choices {
+            margin-top: 1rem;
+    
+            .choice-container {
+                display: flex;
+                margin-bottom: 0.8rem;
+                width: 100%;
+                min-width: 10rem;
+                border-radius: 10px;
+                border: 2.5px solid #dddddd;
+                background: rgb(14, 14, 14);
+                gap: .5rem;
+                transition: 300ms;
+                align-items: center;
+    
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(103%);
+                }
+    
+                .choice-prefix {
+                    padding: 2rem;
+                }
+    
+                .choice-text {
+                    padding: 1rem;
+                    width: 100%;
+                    margin: 0;
+                    font-size: 1.15rem;
+                    font-weight: 300;
+                    p{
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+
+    }
 }
 
 .correct {
