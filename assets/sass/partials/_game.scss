@@ -110,6 +110,7 @@
 
     @media (max-width: 600px) {
         flex-direction: column;
+        gap: 0;
 
 
         .game {
@@ -155,6 +156,7 @@
                 }
     
                 .choice-text {
+                    font-family: "Poor";
                     padding: 1rem;
                     width: 100%;
                     margin: 0;

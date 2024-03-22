@@ -1,7 +1,7 @@
 [
     {
         "Id": "1",
-        "question": "Miles Morales, the hero of Spider-Man: Across the Spider-Verse, can channel his bio-electric energy into powerful shockwaves. But what's his biggest struggle when it comes to mastering his newfound abilities?",
+        "question": "Miles Morales, the hero of Spider-Man, can channel his bio-electric energy.What's his biggest struggle when it comes to using his abilities?",
         "choice1": "He accidentally sticks to everything, including his breakfast cereal.",
         "choice2": "He can't quite control the direction of his zaps, leading to some awkward mid-air greetings.",
         "choice3": "He can't seem to spin a decent web, relying on sticky notes and duct tape to get by.",
@@ -21,7 +21,7 @@
     },
     {
         "Id": "3",
-        "question": "In the critically acclaimed film The Shawshank Redemption, how does Andy Dufresne, the wrongly convicted protagonist, manage to escape from the seemingly inescapable Shawshank prison?",
+        "question": "In the film The Shawshank Redemption, how does Andy Dufresne, the wrongly convicted protagonist, manage to escape from the seemingly inescapable Shawshank prison?",
         "choice1": "He participates in a prison riot.",
         "choice2": "He gets released on parole due to good behavior.",
         "choice3": "He tunnels through his cell wall using a rock hammer.",

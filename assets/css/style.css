@@ -315,6 +315,7 @@ h3 {
 @media (max-width: 600px) {
   .game_container {
     flex-direction: column;
+    gap: 0;
   }
   .game_container .game {
     padding: 1.5rem;
@@ -353,6 +354,7 @@ h3 {
     padding: 2rem;
   }
   .game_container .choices .choice-container .choice-text {
+    font-family: "Poor";
     padding: 1rem;
     width: 100%;
     margin: 0;
@@ -540,6 +542,19 @@ h3 {
 }
 .end-container .end .btn_end .btn:active {
   transform: scale(98%);
+}
+@media (max-width: 600px) {
+  .end-container .end {
+    margin: 1.5rem;
+  }
+  .end-container .end-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .end-container .end-form-container h2 {
+    font-size: 1rem;
+  }
 }
 
 * {
