@@ -1,17 +1,13 @@
 @font-face {
-    font-family: "Poppins";
-    src: url(../../../fonts/Poppins-Regular.woff);
+    font-family: "aringo";
+    src: url(../../../fonts/aringgo.regular.woff2);
 }
 
 @font-face {
-    font-family: "Light";
-    src: url(../../../fonts/Poppins-Regular.woff);
+    font-family: "Poor";
+    src: url(../../../fonts/PoorRichardOpti.woff2);
 }
 
-@font-face {
-    font-family: "Bold";
-    src: url(../../../fonts/Poppins-Regular.woff);
-}
 
 h1{
     font-size: 2rem;
@@ -21,10 +17,21 @@ h1{
     margin-bottom: 0.5rem;
 }
 
+p{
+    color:whitesmoke;
+}
+
+h2{
+    color:whitesmoke;
+    margin: 0;
+    font-weight: 300;
+}
+
 h3{
     font-size: 1.2rem;
     color: $primary;
     margin:0.5rem;
     margin-left: 0;
     letter-spacing: 80%;
+    color:aliceblue;
 }

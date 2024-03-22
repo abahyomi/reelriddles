@@ -1,24 +1,73 @@
 @import 'partials/vars';
 @import 'partials/fontface';
-@import 'partials/header';
 @import 'partials/main';
-@import 'partials/galeria';
-@import 'partials/footer';
+@import 'partials/game';
+@import 'partials/highscores';
+@import 'partials/end';
+
 
 * {
-    font-family:"Poppins";
+    font-family: "aringo";
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-size: 16px;
     margin: 0;
-    overflow-x: hidden;
-    background-color: $background;
-}
+    overflow: hidden;
 
-.header {
-    border-bottom: 1px solid $primary;
-}
+    a {
+        color: aliceblue;
+    }
 
+    .texture-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/noise.png');
+        mix-blend-mode: screen;
+        pointer-events: none;
+        z-index: 9999;
+    }
+
+    .film-grain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        mix-blend-mode: screen;
+        z-index: 10000;
+        /* Ensure it's on top of texture overlay */
+    }
+
+    .film-grain-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Ensure the GIF covers the entire overlay */
+    }
+
+    @media (max-width: 768px) {
+        .texture-overlay {
+            background-size: contain;
+        }
+    }
+
+    .transition {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        background: #fff;
+        -webkit-transform: scaleY(0);
+        transform: scale(0);
+    }
+}

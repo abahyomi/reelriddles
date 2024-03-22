@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title> REELRIDDLES ABAHYOMI 3ºGB</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="../app/main.js"></script>
+    <script src="../app/end.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="end-container">
+        <div class="end" id="end">
+            <h1 class="title_score">Final Score</h1>
+            <form class="end-form-container">
+                <h2 id="end-text">Enter your name below to save your score:</h2>
+                <input type="text" name="name" id="username" placeholder="Enter your name">
+                <button id="saveScoreBtn" onclick="saveHighScore(event)">Save Score</button>
+            </form>
+
+            <div class="btn_end">
+                <a href="game.html" class="btn">Play Again</a>
+                <a href="../index.html" class="btn">Home</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="texture-overlay"></div>
+    <div class="film-grain">
+        <img src="../assets/img/film.gif" alt="Film Grain" class="film-grain-img">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title> REELRIDDLES ABAHYOMI 3ºGB</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="../app/main.js"></script>
+    <script src="../app/game.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body data-barba="wrapper">
+    <div class="transition"></div>
+    <div class="game_container" data-barba="container" data-barba-namespace="game">
+        <div class="logo"> <a href="../index.html"><img src="../assets/img/TEXT.png" alt=""></a> </div>
+        <div id="game" class="game">
+            <div class="hud" id="hud">
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+
+                <h2 id="timer"></h2> 
+
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        score
+                    </p>
+                    <h2 class="hud-main-text" id="score">
+                        0
+                    </h2>
+                </div>
+            </div>
+
+            <h2 class="question" id="question"></h2>
+            <div class="choices">
+                <div class="choice-container">
+                    <p class="choice-prefix">A.</p>
+                    <p class="choice-text" data-number="1"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">B.</p>
+                    <p class="choice-text" data-number="2"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">C.</p>
+                    <p class="choice-text" data-number="3"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">D.</p>
+                    <p class="choice-text" data-number="4"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="texture-overlay"></div>
+    <div class="film-grain">
+        <img src="../assets/img/film.gif" alt="Film Grain" class="film-grain-img">
+    </div>
+</body>
+
+</html>

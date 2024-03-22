@@ -1,0 +1,89 @@
+.highscore_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    background-color: #2b2b2b;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    .pops_chulo{
+        img{
+            width: 700px;
+        }
+    }
+
+    #finalScore {
+        color: #e3e3e3;
+        font-weight: 300;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.63), 0px 2px 4px #000;
+    }
+
+    #showMoreButton,
+    #showLessButton {
+        font-size: 1.15rem;
+        background-color: #e3e3e3;
+        border: 2px solid #0a0a0a;
+        border-radius: 20px;
+        padding: 1rem;
+        transition: 300ms;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(102%);
+            background-color: #0a0a0a;
+            color: #e3e3e3;
+            border: 2px solid #e3e3e3;
+        }
+        &:active {
+            transform: scale(98%);
+        }
+    }
+
+    .btn {
+        font-size: 1.15rem;
+        background-color: #0a0a0a;
+        border: 2px solid #e3e3e3;
+        border-radius: 20px;
+        padding: 1rem;
+        transition: 300ms;
+        text-decoration: none;
+        &:hover {
+            cursor: pointer;
+            transform: scale(102%);
+            background-color: #0a0a0a;
+            color: #e3e3e3;
+            border: 2px solid #e3e3e3;
+        }
+        &:active {
+            transform: scale(98%);
+        }
+    }
+
+
+    .buttons_score {
+        display: flex;
+
+        width: 100%;
+        gap: 2rem;
+    }
+
+    #highScoreList {
+        list-style: none;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        color: #e3e3e3;
+        border: 3px solid #dddddd;
+        background: rgb(14, 14, 14);
+        padding: 2rem;
+    }
+
+    .high-score {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+}

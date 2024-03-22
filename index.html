@@ -5,292 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <title> ECOMMERCE ABAHYOMI 3ºGB</title>
+    <title> REELRIDDLES ABAHYOMI 3ºGB</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="app/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header id="header" class="header">
-        <a href="#"><img id="logo" src="assets/img/Logo.png" alt="Logo_Abahdsn"></a>
-        <button class="abrir_menu" id="abrir_nav"><span class="material-symbols-outlined">
-                menu
-            </span></button>
-        <nav class="Nav" id="nav">
-            <ul id="navBar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">about</a></li>
-            </ul>
-            <button class="cerrar_menu" id="cerrar_nav">&times;</button>
-        </nav>
-        <div class="right">
-            <!--Perfil desplegable-->
-            <img id="userPic" class="prof_pic" src="assets/img/profile.png" alt="profile">
-            <nav class="sub_menu_wrap" id="subMenu">
-                <div class="sub_menu">
-                    <div class="user_info">
-                        <img src="assets/img/profile.png" alt="">
-                        <h3>Abahyomi Cabrera</h3>
-                    </div>
-                    <hr>
-                    <ul class="sub_menu_ops">
-                        <li class="sub_menu_link">Edit Profile</li>
-                        <li class="sub_menu_link">Settings</li>
-                        <li class="sub_menu_link">Help</li>
-                        <li class="sub_menu_link">LogOut</li>
-                    </ul>
+    <div class="container">
+        <!-- <video id="intro-video" autoplay controls>
+            <source src="assets/img/POPS_WalkCycle_Abahyomi_ºGB.mp4" type="video/mp4">
+        </video>  Falta implementar bien su flujo y el responsive -->
+        <div id="home" class="start">
+            <h2>¡Press play or tap to start!</h2>
+            <div class="wrapper">
+                <!--Enseñar modal--><span class="modal_show">Play</span>
+                <a href="pages/highscores.html">Highscores</a>
+            </div>
+        </div>
+
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+
+                <div class="head_modal"> 
+                    <h2>Instructions!</h2>
+                    <span class="close">&times;</span>
                 </div>
-            </nav>
-            <!--Carrito compras-->
-            <div class="shop_cart">
-                <div id="cart"><span class="material-symbols-outlined">
-                        shopping_cart
-                    </span></div>
-                <span class="cantidad">0</span>
-            </div>
-        </div>
-    </header>
-    <!--Carrito compras (desplegado)-->
-    <div class="CartTab">
-        <h2>Carrito</h2>
-        <div class="listCart">
-            <div class="item_array">
-                <div class="item">
-                    <div class="image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="name">
-                        <h3></h3>
-                        <p>carrito vacio</p>
-                    </div>
-                    <div class="price"></div>
-                    <div class="quantity">
-                        <span class="minus"></span>
-                        <span></span>
-                        <span class="plus"></span>
-                    </div>
+
+                <div class="modal_text">
+                    <p>How to Play:<br>
+                        - Answer Wisely: Read each question carefully and select your answer before time runs out. With
+                        hundreds of questions spanning various genres and decades, every round is a new adventure.<br>
+                        -Earn Points: Correct answers earn you 100 points each. Rack up your score and climb the
+                        leaderboard to prove your cinema expertise to the world.</p>
+
+                    <p>Features:<br>
+                        - Spoiler Alert: Brace yourself for spoilers! Dive into questions that delve deep into the heart
+                        of popular films.<br>
+                        - Countdown Timer: Feel the pressure as each question comes with a ticking timer. Think fast and
+                        trust
+                        your instincts to secure the highest score possible.</p>
                 </div>
-            </div>
-            <div class="total">
-                <h3>Total:</h3>
-                <span class="total_pagar"></span>
+
+                <!-- Add start game button -->
+                <a href="pages/game.html">Start Game</a>
             </div>
         </div>
-        <div class="cartBtns">
-            <span class="close" id="closeCart">&times;</span>
-            <button class="checkOut">Check Out</button>
-        </div>
+
     </div>
 
-    <section id="main" class="main">
-        <!--Hero-->
-        <section class="hero">
-            <h1 data-aos="fade-down" data-aos-duration="1000" class="display"> Sell and buy your fav vinils</h1>
-            <div class="imgContainer">
-                <img data-aos="fade-left" data-aos-duration="2000" src="assets/img/HeroIMG.png" alt="">
-            </div>
-        </section>
 
-        <!-- Frames 23x38cm -->
-        <section class="Frames01" id="Frames 01">
-            <h3>23x38cm frames</h3>
-            <div class="Frames">
-                <article class="Frame1" data-name="f1" data-aos="fade-right" data-aos-duration="1000"
-                    data-price="49.99">
-                    <img src="assets/img/Frame 4.png" alt="">
-                    <div class="FrameText">
-                        <h3>"Print 01"</h3>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                            in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...”</p>
-                        <span class="price">49.99</span>
-                    </div>
-                    <div class="FrameButtons">
-                        <button id="SeeMore">See More</button>
-                        <button class="AddCart" id="AddCart">Add to Cart</button>
-                    </div>
-                </article>
-                <article class="Frame1" data-name="f2" data-aos="fade-right" data-aos-duration="1300"
-                    data-price="69.99">
-                    <img src="assets/img/Frame 5.png" alt="">
-                    <div class="FrameText">
-                        <h3>"Print 02"</h3>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                            in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...”</p>
-                        <span class="price">69.99</span>
-                    </div>
-                    <div class="FrameButtons">
-                        <button id="SeeMore">See More</button>
-                        <button class="AddCart" id="AddCart">Add to Cart</button>
-                    </div>
-                </article>
-                <article class="Frame1" data-name="f3" data-aos="fade-right" data-aos-duration="1600"
-                    data-price="89.99">
-                    <img src="assets/img/Frame 6.png" alt="">
-                    <div class="FrameText">
-                        <h3>"Print 03"</h3>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit
-                            in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...”</p>
-                        <span class="price">89.99</span>
-                    </div>
-                    <div class="FrameButtons">
-                        <button id="SeeMore">See More</button>
-                        <button class="AddCart" id="AddCart">Add to Cart</button>
-                    </div>
-                </article>
-                <article class="Frame1" data-name="f3" data-aos="fade-left" data-aos-duration="1000" data-price="89.99">
-                    <img src="assets/img/Frame 7.png" alt="">
-                    <div class="FrameText">
-                        <h3>"Print 04"</h3>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                            in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...”</p>
-                        <span class="price">89.99</span>
-                    </div>
-                    <div class="FrameButtons">
-                        <button id="SeeMore">See More</button>
-                        <button class="AddCart" id="AddCart">Add to Cart</button>
-                    </div>
-                </article>
-                <article class="Frame1" data-name="f3" data-aos="fade-left" data-aos-duration="1300" data-price="89.99">
-                    <img src="assets/img/Frame 8.png" alt="">
-                    <div class="FrameText">
-                        <h3>"Print 05"</h3>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                            in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...”</p>
-                        <span class="price">89.99</span>
-                    </div>
-                    <div class="FrameButtons">
-                        <button id="SeeMore">See More</button>
-                        <button class="AddCart" id="AddCart">Add to Cart</button>
-                    </div>
-                </article>
-                <article class="Frame1" data-name="f3" data-aos="fade-left" data-aos-duration="1600" data-price="89.99">
-                    <img src="assets/img/Frame 9.png" alt="">
-                    <div class="FrameText">
-                        <h3>"Print 06"</h3>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                            in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...”</p>
-                        <span class="price">89.99</span>
-                    </div>
-                    <div class="FrameButtons">
-                        <button id="SeeMore">See More</button>
-                        <button class="AddCart" id="AddCart">Add to Cart</button>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Modal para los frames -->
-            <article class="modal" id="myModal">
-                <div class="modal-content">
-                    <img id="modalImage" src="" alt="Product Image">
-                    <div class="modalInfo">
-                        <span class="close" id="closeModal">&times;</span>
-                        <h3 id="modalPrice"></h3>
-                        <div class="modalText">
-                            <h3 id="modalName"></h3>
-                            <p id="modalDescription"></p>
-                            <button class="AddCart" id="AddCartModal">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <!-- Galeria-->
-        <section class="Gallery">
-            <img id="caja" src="assets/img/galeria 1.png" alt="Main picture">
-            <div class="controles">
-                <button id="izq" data-aos="fade-right" data-aos-duration="800"> <span class="material-symbols-outlined">
-                        chevron_left
-                    </span></button>
-                <section class="caja_mini" data-aos="fade-down" data-aos-duration="1300">
-                    <img class="mini active" src="assets/img/galeria 1.png" alt="picture1" data-num="0" tabindex="">
-                    <img class="mini" src="assets/img/galeria 2.png" alt="picture2" data-num="1" tabindex="">
-                    <img class="mini" src="assets/img/galeria 3.png" alt="picture3" data-num="2" tabindex="">
-                    <img class="mini" src="assets/img/galeria 4.png" alt="picture4" data-num="3" tabindex="">
-                </section>
-                <button id="der" data-aos="fade-left" data-aos-duration="800"> <span class="material-symbols-outlined">
-                        chevron_right
-                    </span> </button>
-            </div>
-        </section>
-    </section>
-    <!-- Footer-->
-    <footer>
-        <img src="assets/img/Logo.png" alt="">
-        <div class="social_container">
-            <a href="https://www.behance.net/abahyomi" target=”_blank” class="social_icon"><img
-                    src="assets/img/Behance_negro.png" alt=""></a>
-            <a href="https://www.instagram.com/abah_dsn/" target=”_blank” class="social_icon"><img
-                    src="assets/img/Instagram_Negro.jpg" alt=""></a>
-            <a href="https://www.linkedin.com/in/abahyomi-cabrera-medina-3baab0220/" target=”_blank”
-                class="social_icon"><img src="assets/img/link_negro.png" alt=""></a>
-            <a href="https://twitter.com/abah_dsn" target=”_blank” class="social_icon"><img
-                    src="assets/img/twitter_negro.png" alt=""></a>
-        </div>
-        <ul class="menu_container">
-            <li class="menu_item">Legal</li>
-            <li class="menu_item">Cookies</li>
-            <li class="menu_item">Shiping</li>
-            <li class="menu_item">Privacy</li>
-            <li class="menu_item">Refounds</li>
-        </ul>
-        <span class="copy"> &copy; 2023, Abahyomi Cabrera </span>
-    </footer>
-
-    <!-- Galeria Aos de transiciones en scroll -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <div class="texture-overlay"></div>
+    <div class="film-grain">
+        <img src="./assets/img/film.gif" alt="Film Grain" class="film-grain-img">
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,52 @@
+[
+    {
+        "Id": "1",
+        "question": "Miles Morales, the hero of Spider-Man: Across the Spider-Verse, can channel his bio-electric energy into powerful shockwaves. But what's his biggest struggle when it comes to mastering his newfound abilities?",
+        "choice1": "He accidentally sticks to everything, including his breakfast cereal.",
+        "choice2": "He can't quite control the direction of his zaps, leading to some awkward mid-air greetings.",
+        "choice3": "He can't seem to spin a decent web, relying on sticky notes and duct tape to get by.",
+        "choice4": "His powers are inconsistent, sometimes leaving him powerless at the worst moments.",
+        "answer": 2,
+        "correction": "Well, you're not entirely wrong. Miles does have some growing pains with his powers, but his biggest challenge is actually his inconsistent powers. Imagine swinging through the city only to have your electricity fizzle out mid-air.(and probably involved a lot of falling). "
+    },
+    {
+        "Id": "2",
+        "question": "In the film Fight Club, what is the first rule of Fight Club, famously stated by Tyler Durden?",
+        "choice1": "You don't talk about Fight Club.",
+        "choice2": "Capitalism should be erradicated",
+        "choice3": "Only two people can fight at a time.",
+        "choice4": "There are no winners or losers.",
+        "answer": 1,
+        "correction": "Look, if you can't remember the first rule, then maybe Fight Club isn't for you. Unless, of course, you enjoy the taste of your own teeth. Just sayin'."
+    },
+    {
+        "Id": "3",
+        "question": "In the critically acclaimed film The Shawshank Redemption, how does Andy Dufresne, the wrongly convicted protagonist, manage to escape from the seemingly inescapable Shawshank prison?",
+        "choice1": "He participates in a prison riot.",
+        "choice2": "He gets released on parole due to good behavior.",
+        "choice3": "He tunnels through his cell wall using a rock hammer.",
+        "choice4": "He is declared innocent after new evidence is discovered.",
+        "answer": 3,
+        "correction": "While Andy is a resourceful guy, even he couldn't charm his way out of Shawshank. He used a rock hammer and a whole lot of patience to dig his way to freedom. Remember, slow and steady wins the race, especially when the race involves breaking out of prison with a tiny rock hammer."
+    },
+    {
+        "Id": "4",
+        "question": "In the cult classic film Pulp Fiction, what unusual request does Vincent Vega have for his partner Jules Winnfield before entering an apartment to retrieve a briefcase?",
+        "choice1": "Jules needs to clean his gun.",
+        "choice2": "They need to recite a Bible passage. ",
+        "choice3": "Vincent wants to grab a burger first.",
+        "choice4": "They need to wear disguises.",
+        "answer": 2,
+        "correction": "See, before they go out and, you know, possibly shoot some people, Jules and Vincent like to take a moment to reflect. Reciting a Bible passage helps them get centered, you know, channel their inner peace. Or at least that's what Jules tells himself."
+    },
+    {
+        "Id": "5",
+        "question": "In the psychological thriller Shutter Island, who is Teddy Daniels, the U.S. Marshal investigating the disappearance of a patient, truly searching for?",
+        "choice1": "A dangerous escaped convict.",
+        "choice2": "His missing partner, Chuck Aule.",
+        "choice3": "His own repressed memories.",
+        "choice4": "The truth behind a secret government experiment.",
+        "answer": 3,
+        "correction": "Teddy's search takes him down some dark and twisty paths, both literally and metaphorically. Turns out, he's not just looking for a missing patient, he's digging up some repressed memories that are about as pleasant as finding a dead body in your breakfast cereal. Buckle up, it's a bumpy ride."
+    }
+]
