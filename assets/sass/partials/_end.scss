@@ -10,7 +10,6 @@
     background-position: center;
     position: relative;
 
-
     .end {
         border: 3px solid #e3e3e3;
         padding: 3rem;
@@ -25,18 +24,20 @@
 
         .end-form-container {
             padding: 2rem 0rem;
-            h2{
+
+            h2 {
                 max-width: 80%;
                 margin-bottom: 1rem;
             }
 
-            input{
+            input {
                 padding: 1rem;
                 background-color: #e5e5e5;
                 border: 3px solid #0b0b0b;
                 border-radius: 15px;
                 transition: 300ms;
                 font-size: 1.15rem;
+
                 &:hover {
                     cursor: pointer;
                     background-color: #e3e3e3;
@@ -44,12 +45,13 @@
                     border: 2px solid #0b0b0b;
                     text-shadow: none;
                 }
+
                 &:active {
                     transform: scale(98%);
                 }
             }
 
-            button{
+            button {
                 padding: 1rem;
                 background-color: #0b0b0b;
                 border: 3px solid #e5e5e5;
@@ -70,8 +72,6 @@
                     transform: scale(98%);
                 }
             }
-
-        
         }
 
         .btn_end {
@@ -97,29 +97,21 @@
                 &:active {
                     transform: scale(98%);
                 }
-
             }
         }
-
-
     }
 
-    @media (max-width: 600px){
-.end{
-    margin: 1.5rem;
-}
-
-.end-form-container{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    h2{
-        font-size: 1rem;
+    @media (max-width: 600px) {
+        .end {
+            margin: 1.5rem;
+        }
+        .end-form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            h2 {
+                font-size: 1rem;
+            }
+        }
     }
-}
-        
-    }
-
-
 }

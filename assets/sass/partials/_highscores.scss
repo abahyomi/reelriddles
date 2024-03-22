@@ -64,7 +64,6 @@
         }
     }
 
-
     .buttons_score {
         display: flex;
 
@@ -85,5 +84,11 @@
     .high-score {
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 1000px) {
+        .pops_chulo{
+            display: none;
+        }
     }
 }
