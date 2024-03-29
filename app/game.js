@@ -25,6 +25,7 @@ window.onload = () => {
         let scoreText = document.getElementById('score');
         let progressBarFull = document.getElementById('progressBarFull');
         let timerElement = document.getElementById('timer');
+        let gameContainer = document.querySelector('.game_container');
 
         // Define la dificultad
         const difficultyLevels = {
@@ -52,6 +53,9 @@ window.onload = () => {
         
             question.innerText = currentQuestion.question;
         
+            // Change background image
+            gameContainer.style.backgroundImage = `url('../assets/${currentQuestion.background}')`;
+        
             choices.forEach(choice => {
                 let number = choice.dataset['number'];
                 choice.innerText = currentQuestion['choice' + number];
@@ -65,8 +69,6 @@ window.onload = () => {
             acceptingAnswers = true;
         }
         
-        
-
         //funcion del contador
         let timer; 
         function startTimer(timeLimit) {
