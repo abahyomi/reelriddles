@@ -38,7 +38,7 @@ h3 {
   gap: 2rem;
   width: 100vw;
   height: 100vh;
-  background-image: url("/assets/img/BG.png");
+  background-image: url("../img/BG.png");
   background-size: cover;
   background-position: left;
   position: relative;
@@ -51,8 +51,16 @@ h3 {
   top: 0;
   width: 100vw;
   height: 100vh;
-  overflow: auto;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.8);
+}
+.container .modal .pops_modal {
+  position: absolute;
+  top: 500px;
+  left: 100px;
+}
+.container .modal .pops_modal img {
+  height: 380px;
 }
 .container .modal-content {
   display: flex;
@@ -182,7 +190,7 @@ h3 {
 }
 @media (max-width: 600px) {
   .container {
-    background-image: url("/assets/img/BG_mobile.png");
+    background-image: url("../img/BG_mobile.png");
     font-size: 1rem;
   }
   .container .start {
@@ -241,7 +249,7 @@ h3 {
 .game_container .question {
   max-width: 90%;
   font-weight: 200;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.63), 0px 2px 4px #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.93), 0px 2px 4px #000;
 }
 .game_container .hud {
   display: flex;
@@ -253,6 +261,7 @@ h3 {
   text-align: center;
   font-size: 2rem;
   margin: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.63), 0px 2px 4px #000;
 }
 .game_container .hud #timer {
   width: 70px;
@@ -272,14 +281,14 @@ h3 {
 .game_container .hud #progressBar {
   width: 20rem;
   height: 3rem;
-  border: 0.2rem solid rgba(200, 200, 200, 0.8666666667);
+  border: 3px solid rgba(255, 255, 255, 0.8666666667);
   margin-top: 0.5rem;
   border-radius: 50px;
   overflow: hidden;
 }
 .game_container .hud #progressBar #progressBarFull {
   height: 100%;
-  background: rgba(26, 26, 26, 0.8666666667);
+  background: rgba(3, 3, 3, 0.8666666667);
   width: 0%;
 }
 .game_container .choices {
@@ -456,7 +465,7 @@ h3 {
   gap: 1rem;
   width: 100vw;
   height: 100vh;
-  background-color: #2b2b2b;
+  background-image: url("../img/end_menu.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -465,7 +474,8 @@ h3 {
   border: 3px solid #e3e3e3;
   padding: 3rem;
   border-radius: 15px;
-  background-color: #1e1e1e;
+  background-color: #151515;
+  opacity: 0.95;
 }
 .end-container .end .title_score {
   color: #e5e5e5;

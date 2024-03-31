@@ -5,7 +5,7 @@
     gap: 1rem;
     width: 100vw;
     height: 100vh;
-    background-color: #2b2b2b;
+    background-image: url('../img/end_menu.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -14,7 +14,8 @@
         border: 3px solid #e3e3e3;
         padding: 3rem;
         border-radius: 15px;
-        background-color: #1e1e1e;
+        background-color: #151515;
+        opacity: 0.95;
 
         .title_score {
             color: #e5e5e5;

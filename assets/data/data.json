@@ -1,11 +1,11 @@
 [
     {
         "Id": "1",
-        "question": "Miles Morales, the hero of Spider-Man, can channel his bio-electric energy.What's his biggest struggle when it comes to using his abilities?",
-        "choice1": "He accidentally sticks to everything, including his breakfast cereal.",
+        "question": "What's Miles Morales' biggest zap of trouble when it comes to harnessing his bio-electric energy in Spider-Man?",
+        "choice1": "He accidentally sticks to everything (literally)",
         "choice2": "He can't quite control the direction of his zaps, leading to some awkward mid-air greetings.",
-        "choice3": "He can't seem to spin a decent web, relying on sticky notes and duct tape to get by.",
-        "choice4": "His powers are inconsistent, sometimes leaving him powerless at the worst moments.",
+        "choice3": "He can't seem to spin a decent web, relying on sticky notes to get by.",
+        "choice4": "His powers are inconsistent, like his jokes",
         "answer": 2,
         "correction": "Well, you're not entirely wrong. Miles does have some growing pains with his powers, but his biggest challenge is actually his inconsistent powers. Imagine swinging through the city only to have your electricity fizzle out mid-air.(and probably involved a lot of falling). ",
         "background": "img/bg_spider.jpg"
@@ -23,7 +23,7 @@
     },
     {
         "Id": "3",
-        "question": "In the film The Shawshank Redemption, how does Andy Dufresne, the wrongly convicted protagonist, manage to escape from the seemingly inescapable Shawshank prison?",
+        "question": "How does Andy Dufresne pull off his Houdini act in The Shawshank Redemption and break free from Shawshank prison?",
         "choice1": "He participates in a prison riot.",
         "choice2": "He gets released on parole due to good behavior.",
         "choice3": "He tunnels through his cell wall using a rock hammer.",
@@ -34,7 +34,7 @@
     },
     {
         "Id": "4",
-        "question": "In the cult classic film Pulp Fiction, what unusual request does Vincent Vega have for his partner Jules Winnfield before entering an apartment to retrieve a briefcase?",
+        "question": "What quirky favor does Vincent Vega ask of Jules Winnfield before they enter an apartment to retrieve a briefcase in Pulp Fiction?",
         "choice1": "Jules needs to clean his gun.",
         "choice2": "They need to recite a Bible passage. ",
         "choice3": "Vincent wants to grab a burger first.",
@@ -45,7 +45,7 @@
     },
     {
         "Id": "5",
-        "question": "In the psychological thriller Shutter Island, who is Teddy Daniels, the U.S. Marshal investigating the disappearance of a patient, truly searching for?",
+        "question": "Who is Teddy Daniels truly hunting for while investigating the disappearance of a patient in the psychological thriller Shutter Island?",
         "choice1": "A dangerous escaped convict.",
         "choice2": "His missing partner, Chuck Aule.",
         "choice3": "His own repressed memories.",
