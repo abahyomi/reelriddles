@@ -202,6 +202,9 @@ h3 {
   .container .start h2 {
     font-size: 1.25rem;
   }
+  .container .modal .pops_modal {
+    display: none;
+  }
   .container .modal-content {
     display: flex;
     align-items: center;
@@ -277,6 +280,7 @@ h3 {
 .game_container .hud .hud-main-text {
   text-align: center;
   color: rgba(255, 255, 255, 0.8666666667);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.93), 0px 2px 4px #000;
 }
 .game_container .hud #progressBar {
   width: 20rem;
@@ -326,8 +330,14 @@ h3 {
     gap: 0;
   }
   .game_container .game {
-    padding: 1.5rem;
+    padding: 1rem;
     width: 100%;
+  }
+  .game_container .hud {
+    margin-bottom: 0.5rem;
+  }
+  .game_container .hud #timer {
+    font-size: 1rem;
   }
   .game_container #progressText {
     font-size: 1rem;
@@ -381,13 +391,13 @@ h3 {
   width: 100vw;
   height: 100vh;
   padding: 2rem;
-  background-color: #2b2b2b;
+  background-image: url("../img/bg_highscore.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
 }
 .highscore_container .pops_chulo img {
-  width: 700px;
+  width: 600px;
 }
 .highscore_container #finalScore {
   color: #e3e3e3;
@@ -453,6 +463,9 @@ h3 {
   margin-bottom: 0.5rem;
 }
 @media (max-width: 1000px) {
+  .highscore_container {
+    background-image: url("../img/bg_highscore_mobile.png");
+  }
   .highscore_container .pops_chulo {
     display: none;
   }

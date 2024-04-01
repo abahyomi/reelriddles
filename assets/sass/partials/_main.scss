@@ -19,11 +19,12 @@
         overflow: hidden;
         background-color: rgba(0, 0, 0, 0.8);
 
-        .pops_modal{
+        .pops_modal {
             position: absolute;
             top: 500px;
             left: 100px;
-            img{
+
+            img {
                 height: 380px;
             }
         }
@@ -42,10 +43,9 @@
         max-width: 70%;
         gap: 1rem;
 
-        .head_modal{
+        .head_modal {
             display: flex;
-            gap: 2rem
-            ;
+            gap: 2rem;
         }
 
 
@@ -183,7 +183,7 @@
         background-image: url('../img/BG_mobile.png');
         font-size: 1rem;
 
-        .start{
+        .start {
             padding: 2rem;
 
             align-items: center;
@@ -195,6 +195,12 @@
                 font-size: 1.25rem;
             }
 
+        }
+
+        .modal {
+            .pops_modal {
+                display: none;
+            }
         }
 
         .modal-content {
@@ -210,14 +216,15 @@
             max-width: 100%;
             gap: 1rem;
 
-            a{
+            a {
                 width: 100%;
             }
-    
-            .head_modal{
+
+            .head_modal {
                 display: flex;
                 gap: 2rem;
             }
+
             .modal_text {
                 flex-direction: column;
                 gap: 1.5rem;
