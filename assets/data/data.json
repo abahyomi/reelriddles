@@ -1,12 +1,12 @@
 [
     {
         "Id": "1",
-        "question": "What's Miles Morales' biggest zap of trouble when it comes to harnessing his bio-electric energy in Spider-Man?",
+        "question": "What's Miles Morales biggest trouble when it comes to harnessing his bio-electric energy in Spider-Man?",
         "choice1": "He accidentally sticks to everything (literally)",
-        "choice2": "He can't quite control the direction of his zaps, leading to some awkward mid-air greetings.",
+        "choice2": "He can't quite control the direction of his zaps, making awkward mid-air greetings.",
         "choice3": "He can't seem to spin a decent web, relying on sticky notes to get by.",
         "choice4": "His powers are inconsistent, like his jokes",
-        "answer": 2,
+        "answer": 4,
         "correction": "Well, you're not entirely wrong. Miles does have some growing pains with his powers, but his biggest challenge is actually his inconsistent powers. Imagine swinging through the city only to have your electricity fizzle out mid-air.(and probably involved a lot of falling). ",
         "background": "img/bg_spider.jpg"
     },
