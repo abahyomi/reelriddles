@@ -1,6 +1,5 @@
 async function saveHighScore(e) {
     e.preventDefault();
-
     const username = document.querySelector('#username').value;
     const mostRecentScore = localStorage.getItem('mostRecentScore');
     const API_ENDPOINT = 'https://65f1e141034bdbecc763eec4.mockapi.io/leaderboard/lead'; 

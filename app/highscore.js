@@ -19,7 +19,6 @@ window.onload = async () => {
         const data = await response.json();
 
         if (response.ok) {
-            // Sort the scores in descending order
             data.sort((a, b) => b.score - a.score);
 
             // Display the top 5 scores initially

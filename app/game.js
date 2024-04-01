@@ -27,7 +27,6 @@ window.onload = () => {
         let timerElement = document.getElementById('timer');
         let gameContainer = document.querySelector('.game_container');
 
-        // Define la dificultad
         const difficultyLevels = {
             easy: 10, 
             medium: 15, 
@@ -53,7 +52,7 @@ window.onload = () => {
         
             question.innerText = currentQuestion.question;
         
-            // Change background image
+            // Cambiar background image
             gameContainer.style.backgroundImage = `url('../assets/${currentQuestion.background}')`;
         
             choices.forEach(choice => {
@@ -61,9 +60,8 @@ window.onload = () => {
                 choice.innerText = currentQuestion['choice' + number];
             });
         
-            // Define la dificultad 
-            let timeLimit = difficultyLevels[currentQuestion.difficulty] || 25;  // tiempo que da en default, si no se selecciona dificultad
-        
+
+            let timeLimit = difficultyLevels[currentQuestion.difficulty] || 25;  // tiempo que da en default
             startTimer(timeLimit);
             availableQuestions.splice(questionIndex, 1);
             acceptingAnswers = true;
@@ -85,12 +83,13 @@ window.onload = () => {
             }, 1000); 
         }
 
+         // Añadir clase para correcto o incorrecto
         choices.forEach(choice => {
             choice.addEventListener('click', function(e) {
                 if (!acceptingAnswers) return;
         
                 acceptingAnswers = false;
-                const selectedChoice = e.currentTarget; // Use currentTarget to refer to the div element
+                const selectedChoice = e.currentTarget; 
                 const selectedAnswer = parseInt(selectedChoice.dataset['number']);
         
                 const classToApply = selectedAnswer === currentQuestion.answer ? 'correct' : 'incorrect';
@@ -98,11 +97,10 @@ window.onload = () => {
                 if (classToApply === 'correct') {
                     incrementScore(scorePoints);
                 }
-        
-                selectedChoice.classList.add(classToApply); // Add class to the selected choice container
+                selectedChoice.classList.add(classToApply);
         
                 setTimeout(() => {
-                    selectedChoice.classList.remove(classToApply); // Remove class from the selected choice container
+                    selectedChoice.classList.remove(classToApply); // dejar la clase 1s
                     getNewQuestion();
                 }, 1000);
             });
