@@ -1,5 +1,6 @@
 window.onload = () => {
-  fetch('assets/data/data.json')
+
+  fetch('../assets/data/data.json')
     .then(response => response.json())
     .then(data => {
       questions = data;
@@ -9,7 +10,13 @@ window.onload = () => {
       }
     });
 
- //Logica del modal
+
+  //Logica traductor
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+  }
+
+  //Logica del modal
   function showModal() {
     var modal = document.getElementById("modal");
     modal.style.display = "block";

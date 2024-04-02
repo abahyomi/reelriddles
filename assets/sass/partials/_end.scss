@@ -75,6 +75,28 @@
             }
         }
 
+        span {
+            padding: 1rem;
+            background-color: #0b0b0b;
+            border: 3px solid #e5e5e5;
+            border-radius: 15px;
+            transition: 300ms;
+            color: #e5e5e5;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #e3e3e3;
+                color: #0b0b0b;
+                border: 2px solid #0b0b0b;
+                text-shadow: none;
+            }
+
+            &:active {
+                transform: scale(98%);
+            }
+
+        }
+
         .btn_end {
             display: flex;
             gap: 2rem;
@@ -100,6 +122,99 @@
                 }
             }
         }
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        .pops_modal {
+            position: absolute;
+            top: 500px;
+            left: 100px;
+
+            img {
+                height: 380px;
+            }
+        }
+    }
+
+    .modal-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #0f0f0f;
+        margin: 15% auto;
+        padding: 4rem;
+        border: 2.5px solid #e5e5e5;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 70%;
+        gap: 1rem;
+
+        .head_modal {
+            display: flex;
+            gap: 2rem;
+        }
+
+
+        .modal_text {
+            display: flex;
+            gap: 1.5rem;
+
+            p {
+                font-family: "Poor";
+            }
+
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            background-color: #0b0b0b;
+            border: 3px solid #e5e5e5;
+            border-radius: 15px;
+            transition: 300ms;
+            width: 40%;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #e3e3e3;
+                color: #0b0b0b;
+                border: 2px solid #0b0b0b;
+                text-shadow: none;
+            }
+
+            &:active {
+                transform: scale(98%);
+            }
+        }
+    }
+
+    .close {
+        color: #e3e3e3;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: .25rem 1rem;
+        transition: 300ms;
+        border-radius: 1000px;
+        cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        background-color: #e5e5e5;
+        border: 2px solid #0b0b0b;
     }
 
     @media (max-width: 600px) {
