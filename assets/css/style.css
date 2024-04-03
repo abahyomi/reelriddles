@@ -338,6 +338,9 @@ h3 {
     flex-direction: column;
     gap: 0;
   }
+  .game_container .logo img {
+    width: 80px;
+  }
   .game_container .game {
     padding: 0.5rem;
     width: 100%;
