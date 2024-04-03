@@ -197,7 +197,10 @@ h3 {
     padding: 2rem;
     align-items: center;
     top: 35%;
-    left: 2%;
+    left: 6%;
+  }
+  .container .start .wrapper {
+    font-size: 1rem;
   }
   .container .start h2 {
     font-size: 1.25rem;
@@ -475,6 +478,12 @@ h3 {
   .highscore_container .pops_chulo {
     display: none;
   }
+  .highscore_container #highScoreList {
+    padding: 1rem;
+  }
+  .highscore_container .high-score {
+    font-size: 1.25rem;
+  }
 }
 
 .end-container {
@@ -573,7 +582,7 @@ h3 {
   border: 3px solid #e5e5e5;
   border-radius: 15px;
   transition: 300ms;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 .end-container .end .btn_end .btn:hover {
   cursor: pointer;
@@ -667,13 +676,15 @@ h3 {
 @media (max-width: 600px) {
   .end-container .end {
     margin: 1.5rem;
+    padding: 1rem;
+  }
+  .end-container .end .btn {
+    font-size: 1rem;
   }
   .end-container .end-form-container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-  }
-  .end-container .end-form-container h2 {
     font-size: 1rem;
   }
 }
