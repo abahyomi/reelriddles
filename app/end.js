@@ -1,3 +1,33 @@
+// Define click1 sound effect
+var click1 = new Howl({
+    src: ['../assets/sound/click.mp4']
+});
+
+// Function to show modal
+function showModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "block";
+    click1.play(); // Play click sound when modal is shown
+
+    var closeBtn = document.querySelector('.close');
+    closeBtn.addEventListener('click', function () {
+        hideModal();
+    });
+
+    window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            hideModal();
+        }
+    });
+}
+
+// Function to hide modal
+function hideModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+    click1.play(); // Play click sound when modal is hidden
+}
+
 window.onload = () => {
     const playBtn = document.querySelector('.modal_show');
     playBtn.addEventListener('click', async function () {
@@ -41,36 +71,12 @@ function displayResults(missedQuestions) {
 
         container.appendChild(questionText);
         container.appendChild(correctionText);
-        
+
         modalText.appendChild(container);
     });
 
     // Show the modal
     showModal();
-}
-
-// Function show modal
-function showModal() {
-    var modal = document.getElementById("modal");
-    modal.style.display = "block";
-
-
-    var closeBtn = document.querySelector('.close');
-    closeBtn.addEventListener('click', function () {
-        hideModal();
-    });
-
-    window.addEventListener('click', function (event) {
-        if (event.target === modal) {
-            hideModal();
-        }
-    });
-}
-
-// Function hide modal
-function hideModal() {
-    var modal = document.getElementById("modal");
-    modal.style.display = "none";
 }
 
 // Function save high score
@@ -107,7 +113,3 @@ async function saveHighScore(e) {
         console.error('Error saving score:', error);
     }
 }
-
-
-
-

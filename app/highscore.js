@@ -6,6 +6,10 @@ window.onload = async () => {
     let displayedScores = 5; 
     const API_ENDPOINT = 'https://65f1e141034bdbecc763eec4.mockapi.io/leaderboard/lead'; //uso de mockapi
 
+    var click1 = new Howl({
+        src: ['../assets/sound/click.mp4']
+    });
+
     // Pintar los Scores
     const renderScores = (scores, startIndex) => {
         return scores.map((entry, index) => {
@@ -13,6 +17,8 @@ window.onload = async () => {
             return `<li class="high-score">${position}. ${entry.name} - ${entry.score}</li>`;
         }).join('');
     };
+
+    
 
     try {
         const response = await fetch(API_ENDPOINT);
@@ -39,6 +45,7 @@ window.onload = async () => {
 
             // Show More / Less
             showMoreButton.addEventListener('click', () => {
+                click1.play(); // Play click sound
                 const startIndex = displayedScores; 
                 displayedScores += 5; // Se suman 5 cadenas
                 const additionalScores = data.slice(startIndex, displayedScores);
@@ -46,6 +53,7 @@ window.onload = async () => {
 
                 // cambio de "show more" a "show less"
                 if (displayedScores >= 10) {
+
                     showMoreButton.style.display = 'none';
                     showLessButton.style.display = 'inline-block';
                 }
@@ -53,6 +61,7 @@ window.onload = async () => {
 
 
             showLessButton.addEventListener('click', () => {
+                click1.play(); // Play click sound
                 displayedScores = 5;
                 const topFiveScores = data.slice(0, displayedScores);
                 highScoresList.innerHTML = renderScores(topFiveScores, 0);

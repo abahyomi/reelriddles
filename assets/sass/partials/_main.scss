@@ -48,15 +48,12 @@
             gap: 2rem;
         }
 
-
         .modal_text {
             display: flex;
             gap: 1.5rem;
-
             p {
                 font-family: "Poor";
             }
-
         }
 
         a {
@@ -112,7 +109,6 @@
         display: block;
     }
 
-
     .start {
         position: absolute;
         display: flex;
@@ -122,6 +118,16 @@
         top: 70%;
         left: 35%;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.63), 0px 2px 4px #000;
+
+        #toggleMusicBtn{
+            margin: 1rem;
+            transition: 200ms;
+
+            &:hover{
+                cursor: pointer;
+                transform: scale(103%);
+            }
+        }
 
         .pops_mobile{
             display: none;

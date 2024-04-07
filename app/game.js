@@ -2,7 +2,7 @@ window.onload = () => {
     const url = '../assets/data/data.json';
     let missedQuestions = [];
 
-    // Fetch JSON data
+      // Fetch JSON data
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -10,6 +10,18 @@ window.onload = () => {
             startGame(questions);
         })
         .catch(error => console.error('Error loading questions:', error));
+
+  //SONIDOS HAWLER
+  var correctsound = new Howl({
+    src: ['../assets/sound/correct.mp3'],
+    volume: 0.7
+  });
+
+  var fail = new Howl({
+    src: ['../assets/sound/fail.mp3'],
+    volume: 0.5
+  });
+
 
     // Function to start the game
     startGame = (questions) => {
@@ -86,7 +98,6 @@ window.onload = () => {
         choices.forEach(choice => {
             choice.addEventListener('click', function (e) {
                 if (!acceptingAnswers) return;
-
                 acceptingAnswers = false;
                 const selectedChoice = e.currentTarget;
                 const selectedAnswer = parseInt(selectedChoice.dataset['number']);
@@ -95,10 +106,12 @@ window.onload = () => {
 
                 if (classToApply === 'incorrect') {
                     // Track missed question
+                    fail.play();
                     missedQuestions.push(currentQuestion);
                 }
 
                 if (classToApply === 'correct') {
+                    correctsound.play();
                     incrementScore(scorePoints);
                 }
                 selectedChoice.classList.add(classToApply);
