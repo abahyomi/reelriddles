@@ -2,7 +2,7 @@ window.onload = () => {
     const url = '../assets/data/data.json';
     let missedQuestions = [];
 
-      // Fetch JSON data
+    // Fetch JSON data
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -11,17 +11,23 @@ window.onload = () => {
         })
         .catch(error => console.error('Error loading questions:', error));
 
-  //SONIDOS HAWLER
-  var correctsound = new Howl({
-    src: ['../assets/sound/correct.mp3'],
-    volume: 0.7
-  });
+    //SONIDOS HAWLER
+    var correctsound = new Howl({
+        src: ['../assets/sound/correct.mp3'],
+        volume: 0.7
+    });
 
-  var fail = new Howl({
-    src: ['../assets/sound/fail.mp3'],
-    volume: 0.5
-  });
+    var fail = new Howl({
+        src: ['../assets/sound/fail.mp3'],
+        volume: 0.5
+    });
 
+    // Event listener for clicking the button to toggle background music
+    var toggleMusicBtn = document.getElementById('toggleMusicBtn');
+    toggleMusicBtn.addEventListener('click', function () {
+        // Toggle background music playback
+        toggleBackgroundMusic();
+    });
 
     // Function to start the game
     startGame = (questions) => {
@@ -89,6 +95,8 @@ window.onload = () => {
 
                 if (timeLeft <= 0) {
                     clearInterval(timer);
+                    fail.play();
+                    missedQuestions.push(currentQuestion);
                     getNewQuestion();
                 }
             }, 1000);

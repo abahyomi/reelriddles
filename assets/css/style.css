@@ -271,6 +271,14 @@ h3 {
   padding: 4rem;
   width: 80%;
 }
+.game_container #toggleMusicBtn {
+  margin: 1rem;
+  transition: 200ms;
+}
+.game_container #toggleMusicBtn:hover {
+  cursor: pointer;
+  transform: scale(103%);
+}
 .game_container .question {
   max-width: 100%;
   font-weight: 200;
@@ -357,6 +365,9 @@ h3 {
     flex-direction: column;
     gap: 0;
   }
+  .game_container #toggleMusicBtn {
+    font-family: "Poor";
+  }
   .game_container .logo img {
     width: 80px;
   }
@@ -436,6 +447,14 @@ h3 {
 }
 .highscore_container .pops_chulo img {
   width: 600px;
+}
+.highscore_container #toggleMusicBtn {
+  margin: 1rem;
+  transition: 200ms;
+}
+.highscore_container #toggleMusicBtn:hover {
+  cursor: pointer;
+  transform: scale(103%);
 }
 .highscore_container #finalScore {
   color: #e3e3e3;

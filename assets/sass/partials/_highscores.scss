@@ -17,6 +17,16 @@
         }
     }
 
+    #toggleMusicBtn{
+        margin: 1rem;
+        transition: 200ms;
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(103%);
+        }
+    }
+
     #finalScore {
         color: #e3e3e3;
         font-weight: 300;

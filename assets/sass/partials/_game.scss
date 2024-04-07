@@ -20,6 +20,16 @@
         width: 80%;
     }
 
+    #toggleMusicBtn {
+        margin: 1rem;
+        transition: 200ms;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(103%);
+        }
+    }
+
     .question {
         max-width: 100%;
         font-weight: 200;
@@ -117,6 +127,10 @@
         flex-direction: column;
         gap: 0;
 
+        #toggleMusicBtn {
+            font-family: "Poor";
+        }
+
         .logo {
             img {
                 width: 80px;
@@ -134,11 +148,13 @@
 
         .hud {
             margin-bottom: 0.5rem;
+
             #timer {
                 font-size: 1rem;
                 padding: 0.5rem;
             }
-            .hud-item{
+
+            .hud-item {
                 .hud-prefix {
                     font-size: 0.9rem;
                 }

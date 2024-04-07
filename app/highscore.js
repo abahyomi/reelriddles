@@ -10,6 +10,14 @@ window.onload = async () => {
         src: ['../assets/sound/click.mp4']
     });
 
+      // Event listener for clicking the button to toggle background music
+  var toggleMusicBtn = document.getElementById('toggleMusicBtn');
+  toggleMusicBtn.addEventListener('click', function () {
+    // Toggle background music playback
+    toggleBackgroundMusic();
+  });
+
+
     // Pintar los Scores
     const renderScores = (scores, startIndex) => {
         return scores.map((entry, index) => {

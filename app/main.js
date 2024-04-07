@@ -4,29 +4,7 @@ window.onload = () => {
     src: ['../assets/sound/click.mp4'] 
   });
 
-  // Define background music
-  var backgroundMusic = new Howl({
-    src: ['../assets/sound/bg.mp3'],
-    loop: true
-  });
-
-  // Function to check if background music is playing
-  function isBackgroundMusicPlaying() {
-    return backgroundMusic.playing();
-  }
-
-  // Function to toggle background music playback
-  function toggleBackgroundMusic() {
-    if (isBackgroundMusicPlaying()) {
-      // If background music is playing, stop it
-      backgroundMusic.pause();
-    } else {
-      // If background music is not playing, start it
-      backgroundMusic.play();
-    }
-  }
-
-  // Event listener for clicking the button to toggle background music playback
+  // Event listener for clicking the button to toggle background music
   var toggleMusicBtn = document.getElementById('toggleMusicBtn');
   toggleMusicBtn.addEventListener('click', function () {
     // Toggle background music playback
