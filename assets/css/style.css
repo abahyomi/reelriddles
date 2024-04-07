@@ -628,7 +628,7 @@ h3 {
   align-items: center;
   flex-direction: column;
   background-color: #0f0f0f;
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 4rem;
   border: 2.5px solid #e5e5e5;
   border-radius: 10px;
@@ -642,7 +642,8 @@ h3 {
 }
 .end-container .modal-content .modal_text {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 .end-container .modal-content .modal_text p {
   font-family: "Poor";

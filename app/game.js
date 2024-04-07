@@ -1,16 +1,17 @@
 window.onload = () => {
     const url = '../assets/data/data.json';
-    // Fetch para el JSON
+    let missedQuestions = [];
+
+    // Fetch JSON data
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            // variable questions con la info del JSON
             const questions = data;
-
-            startGame(questions); // 
+            startGame(questions);
         })
         .catch(error => console.error('Error loading questions:', error));
 
+    // Function to start the game
     startGame = (questions) => {
         let questionCounter = 0;
         let score = 0;
@@ -18,7 +19,7 @@ window.onload = () => {
         let maxQuestions = 5;
         let scorePoints = 100;
 
-        //  DOM elements
+        // DOM elements
         let question = document.getElementById('question');
         let choices = Array.from(document.querySelectorAll('.choice-text'));
         let progressText = document.getElementById('progressText');
@@ -27,48 +28,46 @@ window.onload = () => {
         let timerElement = document.getElementById('timer');
         let gameContainer = document.querySelector('.game_container');
 
+        // Difficulty levels
         const difficultyLevels = {
-            easy: 10, 
-            medium: 15, 
-            hard: 20 
+            easy: 10,
+            medium: 15,
+            hard: 20
         };
 
-        // FUNCIONES
-
+        // Function to get a new question
         getNewQuestion = () => {
-            clearInterval(timer); // resetear el timer
-        
+            clearInterval(timer);
+
             if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
                 localStorage.setItem('mostRecentScore', score);
-                return window.location.assign('end.html');
+                const queryParams = new URLSearchParams({ missedQuestions: JSON.stringify(missedQuestions) });
+                return window.location.assign(`end.html?${queryParams.toString()}`);
             }
-        
+
             questionCounter++;
             progressText.innerText = `Question ${questionCounter} of ${maxQuestions}`;
             progressBarFull.style.width = `${(questionCounter / maxQuestions) * 100}%`;
-        
+
             let questionIndex = Math.floor(Math.random() * availableQuestions.length);
             currentQuestion = availableQuestions[questionIndex];
-        
+
             question.innerText = currentQuestion.question;
-        
-            // Cambiar background image
             gameContainer.style.backgroundImage = `url('../assets/${currentQuestion.background}')`;
-        
+
             choices.forEach(choice => {
                 let number = choice.dataset['number'];
                 choice.innerText = currentQuestion['choice' + number];
             });
-        
 
-            let timeLimit = difficultyLevels[currentQuestion.difficulty] || 25;  // tiempo que da en default
+            let timeLimit = difficultyLevels[currentQuestion.difficulty] || 25;
             startTimer(timeLimit);
             availableQuestions.splice(questionIndex, 1);
             acceptingAnswers = true;
-        }
-        
-        //funcion del contador
-        let timer; 
+        };
+
+        // Timer function
+        let timer;
         function startTimer(timeLimit) {
             let timeLeft = timeLimit;
 
@@ -78,39 +77,47 @@ window.onload = () => {
 
                 if (timeLeft <= 0) {
                     clearInterval(timer);
-                    getNewQuestion(); // pasar a la siguiente pregunta
+                    getNewQuestion();
                 }
-            }, 1000); 
+            }, 1000);
         }
 
-         // Añadir clase para correcto o incorrecto
+        // Add event listeners to choices
         choices.forEach(choice => {
-            choice.addEventListener('click', function(e) {
+            choice.addEventListener('click', function (e) {
                 if (!acceptingAnswers) return;
-        
+
                 acceptingAnswers = false;
-                const selectedChoice = e.currentTarget; 
+                const selectedChoice = e.currentTarget;
                 const selectedAnswer = parseInt(selectedChoice.dataset['number']);
-        
+
                 const classToApply = selectedAnswer === currentQuestion.answer ? 'correct' : 'incorrect';
-        
+
+                if (classToApply === 'incorrect') {
+                    // Track missed question
+                    missedQuestions.push(currentQuestion);
+                }
+
                 if (classToApply === 'correct') {
                     incrementScore(scorePoints);
                 }
                 selectedChoice.classList.add(classToApply);
-        
+
                 setTimeout(() => {
-                    selectedChoice.classList.remove(classToApply); // dejar la clase 1s
+                    selectedChoice.classList.remove(classToApply);
                     getNewQuestion();
                 }, 1000);
             });
         });
-        
+
+        // Increment score function
         incrementScore = num => {
             score += num;
             scoreText.innerText = score;
-        }
+        };
 
-        getNewQuestion(); // Empezar
-    }
-}
+        // Start the game
+        getNewQuestion();
+    };
+};
+

@@ -1,4 +1,79 @@
-// Function to save high score
+window.onload = () => {
+    const playBtn = document.querySelector('.modal_show');
+    playBtn.addEventListener('click', async function () {
+        console.log('See results button clicked...');
+        const queryParams = new URLSearchParams(window.location.search);
+        const missedQuestions = JSON.parse(queryParams.get('missedQuestions'));
+
+        if (missedQuestions && missedQuestions.length > 0) {
+            displayResults(missedQuestions);
+        } else {
+            console.log('No missed questions found.');
+        }
+    });
+
+    const modalText = document.querySelector('.modal_text');
+    const queryParams = new URLSearchParams(window.location.search);
+    const missedQuestions = JSON.parse(queryParams.get('missedQuestions'));
+
+    if (missedQuestions && missedQuestions.length > 0) {
+        displayResults(missedQuestions);
+    } else {
+        modalText.textContent = 'No missed questions found.';
+    }
+};
+
+// Preguntas falladas en el Modal:
+function displayResults(missedQuestions) {
+    const modalText = document.querySelector('.modal_text');
+    modalText.innerHTML = ''; // Clear previous results
+
+    // Iterate through missed questions and their corrections
+    missedQuestions.forEach((question, index) => {
+        // Create container element for each question+correction pair
+        const container = document.createElement('div');
+        container.classList.add('question-container');
+
+        const questionText = document.createElement('p');
+        questionText.textContent = `Question: ${question.question}`;
+        const correctionText = document.createElement('p');
+        correctionText.textContent = `Correction: ${question.correction}`;
+
+        container.appendChild(questionText);
+        container.appendChild(correctionText);
+        
+        modalText.appendChild(container);
+    });
+
+    // Show the modal
+    showModal();
+}
+
+// Function show modal
+function showModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "block";
+
+
+    var closeBtn = document.querySelector('.close');
+    closeBtn.addEventListener('click', function () {
+        hideModal();
+    });
+
+    window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            hideModal();
+        }
+    });
+}
+
+// Function hide modal
+function hideModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
+
+// Function save high score
 async function saveHighScore(e) {
     e.preventDefault();
     console.log('Saving high score...');
@@ -24,7 +99,6 @@ async function saveHighScore(e) {
 
         if (response.ok) {
             console.log('Score saved successfully!');
-            // Redirect to highscores page after saving
             window.location.assign('./highscores.html');
         } else {
             throw new Error('Failed to save score');
@@ -34,80 +108,6 @@ async function saveHighScore(e) {
     }
 }
 
-// Function to fetch missed questions
-
-async function fetchMissedQuestions() {
-    console.log('Fetching missed questions...');
-    // Implement the logic to fetch missed questions
-    // Return an array of missed questions with their corrections
-    // Example:
-    const missedQuestions = [
-        { question: "Missed question 1", correction: "Correction 1" },
-        { question: "Missed question 2", correction: "Correction 2" },
-        // Add more missed questions and corrections as needed
-    ];
-    console.log('Missed questions:', missedQuestions);
-    return missedQuestions;
-}
-
-// Function to display missed questions in modal
-function displayResults(missedQuestions) {
-    console.log('Displaying Results:', missedQuestions);
-    const modalText = document.querySelector('.modal_text');
-    modalText.innerHTML = ''; // Clear previous results
-
-    // Iterate through missed questions and their corrections
-    missedQuestions.forEach(question => {
-        const questionText = document.createElement('p');
-        questionText.textContent = `Question: ${question.question}`;
-        const correctionText = document.createElement('p');
-        correctionText.textContent = `Correction: ${question.correction}`;
-
-        modalText.appendChild(questionText);
-        modalText.appendChild(correctionText);
-    });
-
-    // Show the modal
-    showModal();
-}
 
 
-function showModal() {
-    var modal = document.getElementById("modal");
-    modal.style.display = "block";
-}
 
-function hideModal() {
-    var modal = document.getElementById("modal");
-    modal.style.display = "none";
-}
-
-// Event listener for "See results" button click
-var playBtn = document.querySelectorAll('.modal_show');
-if (playBtn) {
-    playBtn.addEventListener('click', async function () {
-        console.log('See results button clicked...');
-        const missedQuestions = await fetchMissedQuestions();
-        if (missedQuestions && missedQuestions.length > 0) {
-            displayResults(missedQuestions);
-        } else {
-            console.log('No missed questions found.');
-        }
-    });
-} else {
-    console.error('Element with class .modal_show not found.');
-}
-
-// Event listener for closing the modal
-var closeBtn = document.querySelector('.close');
-closeBtn.addEventListener('click', function () {
-    hideModal();
-});
-
-// Event listener to close modal when clicking outside
-window.addEventListener('click', function (event) {
-    var modal = document.getElementById("modal");
-    if (event.target === modal) {
-        hideModal();
-    }
-});

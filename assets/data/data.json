@@ -29,7 +29,7 @@
         "choice3": "He tunnels through his cell wall using a rock hammer.",
         "choice4": "He is declared innocent after new evidence is discovered.",
         "answer": 3,
-        "correction": "While Andy is a resourceful guy, even he couldn't charm his way out of Shawshank. He used a rock hammer and a whole lot of patience to dig his way to freedom. Remember, slow and steady wins the race, especially when the race involves breaking out of prison with a tiny rock hammer.",
+        "correction": "While Andy is a resourceful guy, even he couldn't charm his way out of Shawshank. He used a rock hammer and a whole lot of patience to dig his way to freedom.",
         "background": "img/bg_redshaw.jpg"
     },
     {
@@ -40,7 +40,7 @@
         "choice3": "Vincent wants to grab a burger first.",
         "choice4": "They need to wear disguises.",
         "answer": 2,
-        "correction": "See, before they go out and, you know, possibly shoot some people, Jules and Vincent like to take a moment to reflect. Reciting a Bible passage helps them get centered, you know, channel their inner peace. Or at least that's what Jules tells himself.",
+        "correction": "See, before they go out and, you know, possibly shoot some people, Jules and Vincent like to take a moment to reflect. Reciting a Bible passage helps them get centered, you know, channel their inner peace.",
         "background": "img/bg_pool.jpg"
     },
     {
