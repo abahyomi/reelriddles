@@ -1,7 +1,8 @@
 // Define background music
 var backgroundMusic = new Howl({
     src: ['../assets/sound/bg.mp3'],
-    loop: true
+    loop: true,
+    volume:0.6
 });
 
 function isBackgroundMusicPlaying() {

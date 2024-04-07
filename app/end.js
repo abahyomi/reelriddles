@@ -52,14 +52,14 @@ window.onload = () => {
     }
 };
 
-// Preguntas falladas en el Modal:
+//MODAL:
 function displayResults(missedQuestions) {
     const modalText = document.querySelector('.modal_text');
-    modalText.innerHTML = ''; // Clear previous results
+    modalText.innerHTML = ''; 
 
-    // Iterate through missed questions and their corrections
+    // Preguntas falladas con correcion:
     missedQuestions.forEach((question, index) => {
-        // Create container element for each question+correction pair
+        // contenedor para estilo
         const container = document.createElement('div');
         container.classList.add('question-container');
 
@@ -77,7 +77,7 @@ function displayResults(missedQuestions) {
     showModal();
 }
 
-// Function save high score
+//save high score
 async function saveHighScore(e) {
     e.preventDefault();
     console.log('Saving high score...');

@@ -4,7 +4,7 @@ window.onload = async () => {
     const showMoreButton = document.querySelector('#showMoreButton');
     const showLessButton = document.querySelector('#showLessButton');
     let displayedScores = 5;
-    const API_ENDPOINT = 'https://65f1e141034bdbecc763eec4.mockapi.io/leaderboard/lead'; //uso de mockapi
+    const API_ENDPOINT = 'https://65f1e141034bdbecc763eec4.mockapi.io/leaderboard/lead'; //mockapi
 
     //howler
     var click1 = new Howl({
