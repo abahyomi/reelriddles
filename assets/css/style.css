@@ -141,6 +141,9 @@ h3 {
   left: 35%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.63), 0px 2px 4px #000;
 }
+.container .start .pops_mobile {
+  display: none;
+}
 .container .start h2 {
   font-size: 2rem;
   -webkit-user-select: none;
@@ -196,8 +199,14 @@ h3 {
   .container .start {
     padding: 2rem;
     align-items: center;
-    top: 35%;
+    top: 30%;
     left: 6%;
+  }
+  .container .start .pops_mobile {
+    display: block;
+  }
+  .container .start .pops_mobile img {
+    width: 250px;
   }
   .container .start .wrapper {
     font-size: 1rem;

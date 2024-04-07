@@ -122,6 +122,10 @@
         left: 35%;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.63), 0px 2px 4px #000;
 
+        .pops_mobile{
+            display: none;
+        }
+
         h2 {
             font-size: 2rem;
             user-select: none;
@@ -186,8 +190,15 @@
         .start {
             padding: 2rem;
             align-items: center;
-            top: 35%;
+            top: 30%;
             left: 6%;
+
+            .pops_mobile{
+                display: block;
+                img{
+                    width: 250px;
+                }
+            }
             .wrapper{
                 font-size: 1rem;
             }
@@ -218,19 +229,14 @@
             a {
                 width: 100%;
             }
-
             .head_modal {
                 display: flex;
                 gap: 2rem;
             }
-
             .modal_text {
                 flex-direction: column;
                 gap: 1.5rem;
             }
         }
-
-
     }
-
 }
