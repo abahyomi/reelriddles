@@ -645,6 +645,11 @@ h3 {
   flex-direction: column;
   gap: 0.5rem;
 }
+.end-container .modal-content .modal_text .question-container {
+  padding: 1rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 15px;
+}
 .end-container .modal-content .modal_text p {
   font-family: "Poor";
 }
@@ -697,6 +702,37 @@ h3 {
     flex-direction: column;
     gap: 1rem;
     font-size: 1rem;
+  }
+  .end-container .modal {
+    overflow: scroll;
+  }
+  .end-container .modal-content {
+    margin: 5% auto;
+    padding: 1rem;
+    width: 95%;
+    max-width: 95%;
+    gap: 1rem;
+  }
+  .end-container .modal-content .head_modal {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .end-container .modal-content .head_modal h2 {
+    font-size: 1rem;
+  }
+  .end-container .modal-content .modal_text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .end-container .modal-content .modal_text .question-container {
+    padding: 1rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+  }
+  .end-container .modal-content .modal_text p {
+    font-family: "Poor";
   }
 }
 

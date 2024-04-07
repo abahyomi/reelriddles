@@ -7,7 +7,7 @@
         "choice3": "He can't seem to spin a decent web, relying on sticky notes to get by.",
         "choice4": "His powers are inconsistent, like his jokes",
         "answer": 4,
-        "correction": "Well, you're not entirely wrong. Miles does have some growing pains with his powers, but his biggest challenge is actually his inconsistent powers. Imagine swinging through the city only to have your electricity fizzle out mid-air.(and probably involved a lot of falling). ",
+        "correction": "Miles does have some growing pains with his powers, but his biggest challenge is actually his inconsistent powers.",
         "background": "img/bg_spider.jpg"
     },
     {
@@ -40,7 +40,7 @@
         "choice3": "Vincent wants to grab a burger first.",
         "choice4": "They need to wear disguises.",
         "answer": 2,
-        "correction": "See, before they go out and, you know, possibly shoot some people, Jules and Vincent like to take a moment to reflect. Reciting a Bible passage helps them get centered, you know, channel their inner peace.",
+        "correction": "See, before they go out and possibly shoot some people, Jules and Vincent like to take a moment to reflect. Reciting a Bible passage helps them get centered, you know, channel their inner peace.",
         "background": "img/bg_pool.jpg"
     },
     {
@@ -51,7 +51,7 @@
         "choice3": "His own repressed memories.",
         "choice4": "The truth behind a secret government experiment.",
         "answer": 3,
-        "correction": "Teddy's search takes him down some dark and twisty paths, both literally and metaphorically. Turns out, he's not just looking for a missing patient, he's digging up some repressed memories that are about as pleasant as finding a dead body in your breakfast cereal. Buckle up, it's a bumpy ride.",
+        "correction": "Teddy's search takes him down some dark and twisty paths. Turns out, he's not just looking for a missing patient, he's digging up some repressed memories that are about as pleasant as finding a dead body in your breakfast cereal.",
         "background": "img/bg_shutter.jpg"
     }
 ]

@@ -60,7 +60,7 @@ window.onload = () => {
                 choice.innerText = currentQuestion['choice' + number];
             });
 
-            let timeLimit = difficultyLevels[currentQuestion.difficulty] || 25;
+            let timeLimit = difficultyLevels[currentQuestion.difficulty] || 35;
             startTimer(timeLimit);
             availableQuestions.splice(questionIndex, 1);
             acceptingAnswers = true;
