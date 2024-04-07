@@ -1,13 +1,12 @@
 window.onload = () => {
   //SONIDOS HAWLER
   var click1 = new Howl({
-    src: ['../assets/sound/click.mp4'] 
+    src: ['../assets/sound/click.mp4']
   });
 
   // Event listener for clicking the button to toggle background music
   var toggleMusicBtn = document.getElementById('toggleMusicBtn');
   toggleMusicBtn.addEventListener('click', function () {
-    // Toggle background music playback
     toggleBackgroundMusic();
   });
 
@@ -19,30 +18,20 @@ window.onload = () => {
     .then(response => response.json())
     .then(data => {
       questions = data;
-
-      for (let question of questions) {
-        console.log(questions);
-      }
     });
 
-  // Logic for Google Translate initialization
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-  }
 
-  // Logic for displaying modal
+  //MODAL
   function showModal() {
     var modal = document.getElementById("modal");
     modal.style.display = "block";
   }
 
-  // Logic for hiding modal
   function hideModal() {
     var modal = document.getElementById("modal");
     modal.style.display = "none";
   }
 
-  // Event listener for clicking "Play" button
   var playBtn = document.querySelector('.modal_show');
   playBtn.addEventListener('click', function () {
     showModal();
@@ -50,14 +39,12 @@ window.onload = () => {
     click1.play();
   });
 
-  // Event listener for clicking close button
   var closeBtn = document.querySelector('.close');
   closeBtn.addEventListener('click', function () {
     hideModal();
     click1.play();
   });
 
-  // Event listener for clicking outside the modal
   window.addEventListener('click', function (event) {
     var modal = document.getElementById("modal");
     if (event.target === modal) {
@@ -66,7 +53,7 @@ window.onload = () => {
     }
   });
 
-  // Event listener for clicking "Leaderboard" link
+  // Leadboard
   var leaderboardLink = document.querySelector('a[href="pages/highscores.html"]');
   leaderboardLink.addEventListener('click', function () {
     // Play the sound

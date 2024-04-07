@@ -122,7 +122,6 @@
         #toggleMusicBtn{
             margin: 1rem;
             transition: 200ms;
-
             &:hover{
                 cursor: pointer;
                 transform: scale(103%);
@@ -163,7 +162,6 @@
                 &:active {
                     transform: scale(98%);
                 }
-
             }
 
 
@@ -174,7 +172,6 @@
                 border-radius: 15px;
                 transition: 300ms;
                 text-decoration: none;
-
                 &:hover {
                     cursor: pointer;
                     background-color: #e3e3e3;
@@ -182,14 +179,12 @@
                     border: 2px solid #0b0b0b;
                     text-shadow: none;
                 }
-
                 &:active {
                     transform: scale(98%);
                 }
             }
         }
     }
-
 
     @media (max-width: 600px) {
         background-image: url('../img/BG_mobile.png');
@@ -200,7 +195,6 @@
             align-items: center;
             top: 30%;
             left: 6%;
-
             .pops_mobile{
                 display: block;
                 img{
@@ -233,7 +227,6 @@
             width: 95%;
             max-width: 100%;
             gap: 1rem;
-
             a {
                 width: 100%;
             }

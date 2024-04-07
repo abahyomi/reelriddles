@@ -31,7 +31,6 @@ function hideModal() {
 window.onload = () => {
     const playBtn = document.querySelector('.modal_show');
     playBtn.addEventListener('click', async function () {
-        console.log('See results button clicked...');
         const queryParams = new URLSearchParams(window.location.search);
         const missedQuestions = JSON.parse(queryParams.get('missedQuestions'));
 
@@ -71,7 +70,6 @@ function displayResults(missedQuestions) {
 
         container.appendChild(questionText);
         container.appendChild(correctionText);
-
         modalText.appendChild(container);
     });
 
@@ -88,7 +86,6 @@ async function saveHighScore(e) {
     console.log('Username:', username);
     console.log('Most recent score:', mostRecentScore);
     const API_ENDPOINT = 'https://65f1e141034bdbecc763eec4.mockapi.io/leaderboard/lead';
-
     const scoreData = {
         name: username,
         score: mostRecentScore

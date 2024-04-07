@@ -23,7 +23,6 @@
     #toggleMusicBtn {
         margin: 1rem;
         transition: 200ms;
-
         &:hover {
             cursor: pointer;
             transform: scale(103%);
@@ -78,7 +77,6 @@
             margin-top: .5rem;
             border-radius: 50px;
             overflow: hidden;
-
             #progressBarFull {
                 height: 100%;
                 background: #030303dd;
@@ -89,7 +87,6 @@
 
     .choices {
         margin-top: 1rem;
-
         .choice-container {
             display: flex;
             margin-bottom: 0.8rem;
@@ -107,11 +104,9 @@
                 cursor: pointer;
                 transform: scale(103%);
             }
-
             .choice-prefix {
                 padding: 2rem;
             }
-
             .choice-text {
                 padding: 2.1rem;
                 border-radius: 10px;
@@ -148,12 +143,10 @@
 
         .hud {
             margin-bottom: 0.5rem;
-
             #timer {
                 font-size: 1rem;
                 padding: 0.5rem;
             }
-
             .hud-item {
                 .hud-prefix {
                     font-size: 0.9rem;
@@ -176,7 +169,6 @@
 
         .choices {
             margin-top: 0.5rem;
-
             .choice-container {
                 display: flex;
                 margin-bottom: 0.4rem;
@@ -203,11 +195,9 @@
         }
     }
 }
-
 .correct {
     background: green;
 }
-
 .incorrect {
     background: red;
 }
