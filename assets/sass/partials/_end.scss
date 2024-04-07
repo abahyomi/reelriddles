@@ -17,6 +17,10 @@
         background-color: #151515;
         opacity: 0.95;
 
+        a{
+            text-decoration: none;
+        }
+
         .title_score {
             color: #e5e5e5;
             font-weight: 400;
@@ -100,7 +104,7 @@
         .btn_end {
             display: flex;
             gap: 2rem;
-
+        
             .btn {
                 padding: 1rem;
                 background-color: #0b0b0b;
@@ -108,7 +112,6 @@
                 border-radius: 15px;
                 transition: 300ms;
                 font-size: 1rem;
-
                 &:hover {
                     cursor: pointer;
                     background-color: #e3e3e3;

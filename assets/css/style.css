@@ -90,6 +90,7 @@ h3 {
   display: flex;
   justify-content: center;
   padding: 1rem;
+  text-decoration: none;
   background-color: #0b0b0b;
   border: 3px solid #e5e5e5;
   border-radius: 15px;
@@ -180,6 +181,7 @@ h3 {
   border: 3px solid #e5e5e5;
   border-radius: 15px;
   transition: 300ms;
+  text-decoration: none;
 }
 .container .start .wrapper a:hover {
   cursor: pointer;
@@ -523,6 +525,9 @@ h3 {
   border-radius: 15px;
   background-color: #151515;
   opacity: 0.95;
+}
+.end-container .end a {
+  text-decoration: none;
 }
 .end-container .end .title_score {
   color: #e5e5e5;
